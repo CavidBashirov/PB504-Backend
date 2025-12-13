@@ -1,0 +1,10 @@
+﻿@model SliderCreateVM
+<form method="post" asp-action="Create" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label class="form-label">Image: </label>
+        <input asp-for="NewImages" class="form-control" accept="image/png, image/gif, image/jpeg">
+        <span class="text-danger" asp-validation-for="NewImages"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <a class="btn btn-primary" asp-action="Index">Cancel</a>
+</form>

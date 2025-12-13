@@ -1,0 +1,53 @@
+﻿@model Dictionary<string, string>
+
+@{
+    var testimonials = new List<dynamic>();
+
+    for (int i = 1; i <= 2; i++)
+    {
+        var image = Model[$"TestimonialImage{i}"];
+        var comment = Model[$"TestimonialComment{i}"];
+		var fullName = Model[$"TestimonialName{i}"];
+		var position = Model[$"TestimonialPosition{i}"];
+
+        testimonials.Add(new
+        {
+            Image = image,
+            FullName = fullName,
+            Comment = comment,
+			Position = position
+        });
+    }
+}
+
+<!-- SAY START -->
+
+<section id="say">
+    <div class="container">
+        <div class="row py-5 justify-content-center">
+            <div class="col-md-8 col-xl-6">
+                <div class="owl-carousel say">
+                    @foreach (var item in testimonials)
+                    {
+                        <div>
+                            <div class="item text-center">
+                                <div class="img d-flex justify-content-center">
+                                    <img src="~/assets/img/@item.Image" alt="">
+                                </div>
+                                <div class="text text-muted pt-3 pb-5">
+                                    <i>@item.Comment</i>
+                                </div>
+                                <div class="author">
+                                    <h6>@item.FullName</h6>
+                                    <p class="text-black-50">@item.Position</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SAY END -->

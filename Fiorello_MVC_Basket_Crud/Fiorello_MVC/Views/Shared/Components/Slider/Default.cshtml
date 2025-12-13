@@ -1,0 +1,28 @@
+﻿@using Fiorello_MVC.ViewComponents
+@model SliderVMVC
+
+<!-- SLIDER START -->
+
+<section id="slider">
+    <div class="owl-carousel slider">
+        @foreach (var item in Model.Slider)
+        {
+            <div> <img src="~/assets/img/@item.Image" alt=""> </div>
+        }
+    </div>
+    <div class="container context pl-lg-5 ml-lg-3">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="text">
+                    <h1>@Model.SliderInfo.Title</h1>
+                    <p class="text-black-50 d-none d-sm-block">@Model.SliderInfo.Description</p>
+                </div>
+                <div class="img">
+                    <img src="~/assets/img/@Model.SliderInfo.Image" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDER END -->

@@ -1,0 +1,20 @@
+﻿@model IEnumerable<CategoryVM>
+<h3>Admin Cruds</h3>
+
+<div>
+    <a class="btn btn-success mb-3" asp-area="Admin" asp-controller="Category" asp-action="Create">Create</a>
+</div>
+<ul class="list-group">
+	@foreach (var item in Model)
+	{
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            @item.Name
+            <div>
+                <a class="btn btn-primary" asp-area="Admin" asp-controller="Category" asp-action="Detail" asp-route-id="@item.Id">Detail</a>
+                <a class="btn btn-warning" asp-area="Admin" asp-controller="Category" asp-action="Update" asp-route-id="@item.Id">Update</a>
+                <a class="btn btn-danger delete-category" data-id="@item.Id">Delete</a>
+            </div>
+        </li>
+
+    }
+</ul>

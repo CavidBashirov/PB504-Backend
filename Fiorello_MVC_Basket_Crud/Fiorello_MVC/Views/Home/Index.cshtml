@@ -1,0 +1,135 @@
+﻿@using Fiorello_MVC.ViewModels
+@model HomeVM
+
+    <!-- MAIN START -->
+
+    <main>
+
+    @await Component.InvokeAsync("Slider");
+
+
+
+
+        <!-- PRODUCTS START -->
+
+        <section id="products">
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="col-12 d-flex justify-content-between">
+                        <ul class="category-mobile d-md-none list-unstyled">
+                            <li>
+                                <a href="" class="categories mr-2">Categories</a>
+                                <i class="fas fa-caret-down"></i>
+                                <ul class="category list-unstyled" style="display: none;">
+                                    <li><a href="" data-id="all">All</a></li>
+                                    <li><a href="" data-id="popular">Popular</a></li>
+                                    <li><a href="" data-id="winter">Winter</a></li>
+                                    <li><a href="" data-id="various">Various</a></li>
+                                    <li><a href="" data-id="exotic">Exotic</a></li>
+                                    <li><a href="" data-id="green">Greens</a></li>
+                                    <li><a href="" data-id="cactuse">Cactuses</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="category d-none d-md-flex list-unstyled">
+                            <li><a href="" data-id="all">All</a></li>
+                            @foreach (var item in Model.Categories)
+                        {
+                            <li><a href="" data-id="@item.Id">@item.Name</a></li>
+                        }
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="" class="mr-2">Filter</a>
+                                <i class="fas fa-caret-down"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    @foreach (var item in Model.Products)
+                {
+                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
+                        <div class="product-item text-center" data-id="@item.CategoryId">
+                            <div class="img">
+                                <a href="">
+                                    <img src="~/assets/img/@item.Image" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="title mt-3">
+                                <h6>@item.Name</h6>
+                            </div>
+                            <div class="price">
+                                <span data-id="@item.Id" class="text-black-50 add-basket">Add to cart</span>
+                                <span class="text-black-50">@item.Price</span>
+                            </div>
+                        </div>
+                    </div>
+                }
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTS END -->
+	@await Component.InvokeAsync("Surprise");
+
+
+
+
+	@await Component.InvokeAsync("Expert");
+
+
+
+
+        <!-- SUBSCRIBE START -->
+
+        <section id="subscribe">
+            <div class="container py-5">
+                <div class="row py-5">
+                    <div class="col-12">
+                        <div class="content text-center py-5">
+                            <h3>Join The Colorful Bunch!</h3>
+                            <div class="form-group d-flex justify-content-center flex-wrap mt-5">
+                                <input type="email" placeholder="Email Address" class="form-control-lg rounded-0">
+                                <button class="btn btn-danger btn-lg rounded-0 px-5 mt-3 mt-sm-0">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUBSCRIBE END -->
+	@await Component.InvokeAsync("Blog");
+
+
+
+
+	@await Component.InvokeAsync("Testimonial");
+
+
+
+
+        <!-- INSTAGRAM START -->
+
+        <section id="instagram">
+            <div class="owl-carousel instagram">
+                <div><img src="~/assets/img/instagram1.jpg" class="img-fluid" alt=""></div>
+                <div><img src="~/assets/img/instagram2.jpg" class="img-fluid" alt=""></div>
+                <div><img src="~/assets/img/instagram3.jpg" class="img-fluid" alt=""></div>
+                <div><img src="~/assets/img/instagram4.jpg" class="img-fluid" alt=""></div>
+                <div><img src="~/assets/img/instagram5.jpg" class="img-fluid" alt=""></div>
+                <div><img src="~/assets/img/instagram6.jpg" class="img-fluid" alt=""></div>
+                <div><img src="~/assets/img/instagram7.jpg" class="img-fluid" alt=""></div>
+                <div><img src="~/assets/img/instagram8.jpg" class="img-fluid" alt=""></div>
+            </div>
+            <div class="hastag bg-light text-muted py-2 px-3">
+                #FIORELLO
+            </div>
+        </section>
+
+        <!-- INSTAGRAM END -->
+
+    </main>
+
+    <!-- MAIN END -->
