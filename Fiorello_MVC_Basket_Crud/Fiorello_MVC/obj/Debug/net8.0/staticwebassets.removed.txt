@@ -1,6 +1,0 @@
-C:\Users\javid.bashirov\Desktop\PB504\Fiorello_MVC_Basket_Crud\Fiorello_MVC\wwwroot\assets\img\4452ea10-9f0c-4c17-8927-70bd7f5d1d51-h3-background-img.jpg
-C:\Users\javid.bashirov\Desktop\PB504\Fiorello_MVC_Basket_Crud\Fiorello_MVC\wwwroot\assets\img\58d0217d-0b8a-4473-b4bd-673250c48d49-h3-background-img.jpg
-C:\Users\javid.bashirov\Desktop\PB504\Fiorello_MVC_Basket_Crud\Fiorello_MVC\wwwroot\assets\img\9008655e-e0d7-4f1f-b5f6-7498738dbb08-favicon.png
-C:\Users\javid.bashirov\Desktop\PB504\Fiorello_MVC_Basket_Crud\Fiorello_MVC\wwwroot\assets\img\96f6538b-79f6-4c40-a408-88eadc61633f-blog-feature-img-3.jpg
-C:\Users\javid.bashirov\Desktop\PB504\Fiorello_MVC_Basket_Crud\Fiorello_MVC\wwwroot\assets\img\bad1d92a-f155-4ff2-931e-dd143380a3de-h3-team-img-2.png
-C:\Users\javid.bashirov\Desktop\PB504\Fiorello_MVC_Basket_Crud\Fiorello_MVC\wwwroot\assets\img\bc5ef79f-0344-41de-bd6a-b8d0436cdefb-blog-feature-img-1.jpg

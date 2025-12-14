@@ -1,5 +1,4 @@
-﻿using Azure.Core;
-using Fiorello_MVC.Data;
+﻿using Fiorello_MVC.Data;
 using Fiorello_MVC.Models;
 using Fiorello_MVC.Services.Interfaces;
 using Fiorello_MVC.ViewModels.Sliders;
@@ -41,6 +40,20 @@ namespace Fiorello_MVC.Services
             await _context.SaveChangesAsync();
         }
 
+        public async Task EditAsync(int id, SliderEditVM model)
+        {
+            var dbSlider = await _context.sliders.FindAsync(id);
+            string oldPath = _fileService.GeneratePath("assets/img", dbSlider.Image);
+            _fileService.Delete(oldPath);
+
+            string fileName = _fileService.GenerateUniqueName(model.NewImage.FileName);
+            string newPath = _fileService.GeneratePath("assets/img", fileName);
+            await _fileService.UploadAsync(model.NewImage, newPath);
+
+            dbSlider.Image = fileName;
+            await _context.SaveChangesAsync();
+        }
+
         public async Task<IEnumerable<SliderVM>> GetAllAdminAsync()
         {
             return await _context.sliders.Select(m => new SliderVM { Id = m.Id, Image = m.Image }).ToListAsync();
@@ -51,6 +64,11 @@ namespace Fiorello_MVC.Services
             return await _context.sliders.Select(m => new SliderUIVM { Image = m.Image }).ToListAsync();
         }
 
+        public async Task<SliderVM> GetByIdAsync(int id)
+        {
+            var dbSldier = await _context.sliders.FindAsync(id);
+            return new SliderVM { Id = dbSldier.Id, Image = dbSldier.Image };
+        }
 
         public async Task<SliderInfoUIVM> GetInfoAsync()
         {

@@ -9,5 +9,7 @@ namespace Fiorello_MVC.Services.Interfaces
         Task<IEnumerable<SliderVM>> GetAllAdminAsync();
         Task CreateAsync(SliderCreateVM model);
         Task DeleteAsync(int id);
+        Task EditAsync(int id, SliderEditVM model);
+        Task<SliderVM> GetByIdAsync(int id);
     }
 }

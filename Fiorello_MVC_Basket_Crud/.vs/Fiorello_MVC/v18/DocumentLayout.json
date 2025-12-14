@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\javid.bashirov\\Desktop\\PB504\\Fiorello_MVC_Basket_Crud\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C7B59F90-349C-4EDE-BA78-F708D7A84E3F}|Fiorello_MVC\\Fiorello_MVC.csproj|c:\\users\\javid.bashirov\\desktop\\pb504\\fiorello_mvc_basket_crud\\fiorello_mvc\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7B59F90-349C-4EDE-BA78-F708D7A84E3F}|Fiorello_MVC\\Fiorello_MVC.csproj|solutionrelative:fiorello_mvc\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7B59F90-349C-4EDE-BA78-F708D7A84E3F}|Fiorello_MVC\\Fiorello_MVC.csproj|c:\\users\\javid.bashirov\\desktop\\pb504\\fiorello_mvc_basket_crud\\fiorello_mvc\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7B59F90-349C-4EDE-BA78-F708D7A84E3F}|Fiorello_MVC\\Fiorello_MVC.csproj|solutionrelative:fiorello_mvc\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7B59F90-349C-4EDE-BA78-F708D7A84E3F}|Fiorello_MVC\\Fiorello_MVC.csproj|c:\\users\\javid.bashirov\\desktop\\pb504\\fiorello_mvc_basket_crud\\fiorello_mvc\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C7B59F90-349C-4EDE-BA78-F708D7A84E3F}|Fiorello_MVC\\Fiorello_MVC.csproj|solutionrelative:fiorello_mvc\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7B59F90-349C-4EDE-BA78-F708D7A84E3F}|Fiorello_MVC\\Fiorello_MVC.csproj|c:\\users\\javid.bashirov\\desktop\\pb504\\fiorello_mvc_basket_crud\\fiorello_mvc\\services\\interfaces\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7B59F90-349C-4EDE-BA78-F708D7A84E3F}|Fiorello_MVC\\Fiorello_MVC.csproj|solutionrelative:fiorello_mvc\\services\\interfaces\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\javid.bashirov\\Desktop\\PB504\\Fiorello_MVC_Basket_Crud\\Fiorello_MVC\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Fiorello_MVC\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\javid.bashirov\\Desktop\\PB504\\Fiorello_MVC_Basket_Crud\\Fiorello_MVC\\Services\\ProductService.cs",
+              "RelativeToolTip": "Fiorello_MVC\\Services\\ProductService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAmwCkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T14:21:53.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\javid.bashirov\\Desktop\\PB504\\Fiorello_MVC_Basket_Crud\\Fiorello_MVC\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "Fiorello_MVC\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "ToolTip": "C:\\Users\\javid.bashirov\\Desktop\\PB504\\Fiorello_MVC_Basket_Crud\\Fiorello_MVC\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "Fiorello_MVC\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-14T14:11:59.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ICategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\javid.bashirov\\Desktop\\PB504\\Fiorello_MVC_Basket_Crud\\Fiorello_MVC\\Services\\Interfaces\\ICategoryService.cs",
+              "RelativeDocumentMoniker": "Fiorello_MVC\\Services\\Interfaces\\ICategoryService.cs",
+              "ToolTip": "C:\\Users\\javid.bashirov\\Desktop\\PB504\\Fiorello_MVC_Basket_Crud\\Fiorello_MVC\\Services\\Interfaces\\ICategoryService.cs",
+              "RelativeToolTip": "Fiorello_MVC\\Services\\Interfaces\\ICategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T14:08:24.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\javid.bashirov\\Desktop\\PB504\\Fiorello_MVC_Basket_Crud\\Fiorello_MVC\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Fiorello_MVC\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\javid.bashirov\\Desktop\\PB504\\Fiorello_MVC_Basket_Crud\\Fiorello_MVC\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Fiorello_MVC\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAmwC8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T14:05:58.753Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

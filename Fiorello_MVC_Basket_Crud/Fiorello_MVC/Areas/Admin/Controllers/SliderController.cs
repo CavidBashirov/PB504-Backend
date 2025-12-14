@@ -42,5 +42,29 @@ namespace Fiorello_MVC.Areas.Admin.Controllers
             await _sliderService.DeleteAsync(id);
             return Ok();
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id is null) return BadRequest();
+            var existSlider = await _sliderService.GetByIdAsync(id.Value);
+            return View(new SliderEditVM { ExistImage = existSlider.Image});
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int? id, SliderEditVM request)
+        {
+            if (id is null) return BadRequest();
+
+            if (!ModelState.IsValid)
+            {
+                var existSlider = await _sliderService.GetByIdAsync(id.Value);
+                return View(new SliderEditVM { ExistImage = existSlider.Image});
+            }
+
+            await _sliderService.EditAsync(id.Value, request);
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

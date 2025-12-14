@@ -1,0 +1,17 @@
+﻿@model SliderEditVM
+<div class="container">
+    <div class="image">
+        <img src="~/assets/img/@Model.ExistImage" style="width:300px; height:200px" />
+    </div>
+    <form method="post" asp-action="Edit" enctype="multipart/form-data" class="mt-5">
+        <div class="mb-3">
+            <label class="form-label">Image: </label>
+            <input asp-for="NewImage" class="form-control" accept="image/png, image/gif, image/jpeg">
+            <span class="text-danger" asp-validation-for="NewImage"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a class="btn btn-primary" asp-action="Index">Cancel</a>
+    </form>
+
+</div>
+

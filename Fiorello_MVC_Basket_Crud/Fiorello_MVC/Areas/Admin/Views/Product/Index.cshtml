@@ -1,0 +1,34 @@
+﻿@model IEnumerable<ProductVM>
+<div class="container-fluid mt-3">
+
+    <div>
+        <a class="btn btn-success mb-3" asp-area="Admin" asp-controller="Product" asp-action="Create">Create</a>
+    </div>
+    <table class="table mt-3">
+        <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Name</th>
+                <th scope="col">Category</th>
+                <th scope="col">Operations</th>
+            </tr>
+        </thead>
+        <tbody>
+         @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <img src="~/assets/img/@item.Image" style="width:300px; height:200px" />
+                    </td>
+                    <td>@item.Name</td>
+                    <td>@item.Category</td>
+                    <td>
+                        <a class="btn btn-primary" asp-area="Admin" asp-controller="Product" asp-action="Detail" asp-route-id="@item.Id">Detail</a>
+                        <a class="btn btn-warning" asp-area="Admin" asp-controller="Product" asp-action="Edit" asp-route-id="@item.Id">Update</a>
+                        <a class="btn btn-danger delete-slider" data-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

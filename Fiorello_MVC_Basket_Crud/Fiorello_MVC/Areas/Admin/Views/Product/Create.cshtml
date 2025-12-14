@@ -1,0 +1,31 @@
+﻿@model ProductCreateVM
+<form method="post" asp-action="Create" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label class="form-label">Name: </label>
+        <input asp-for="Name" class="form-control">
+        <span class="text-danger" asp-validation-for="Name"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Description: </label>
+        <input asp-for="Description" class="form-control">
+        <span class="text-danger" asp-validation-for="Description"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Price: </label>
+        <input asp-for="Price" class="form-control">
+        <span class="text-danger" asp-validation-for="Price"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Category: </label>
+        <select asp-for="CategoryId" class="form-control" asp-items="@ViewBag.categories"></select>
+        <span class="text-danger" asp-validation-for="CategoryId"></span>
+    </div>
+   
+    <div class="mb-3">
+        <label class="form-label">Image: </label>
+        <input asp-for="Images" class="form-control" accept="image/png, image/gif, image/jpeg">
+        <span class="text-danger" asp-validation-for="Images"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <a class="btn btn-primary" asp-action="Index">Cancel</a>
+</form>

@@ -6,5 +6,7 @@ namespace Fiorello_MVC.Services.Interfaces
     {
         Task<IEnumerable<ProductUIVM>> GetAllAsync();
         Task<decimal> GetPriceByIdAsync(int id);
+        Task<IEnumerable<ProductVM>> GetAllAdminAsync();
+        Task CreateAsync(ProductCreateVM model);
     }
 }
